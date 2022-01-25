@@ -10,21 +10,17 @@ public class Entrenador extends SeleccionFutbol {
 		super();
 	}
 
-	public Entrenador(int id, String nombre, String apellido, int edad) {
+	public Entrenador(int id, String nombre, String apellido, int edad , String idFederacion) {
 		super(id, nombre, apellido, edad);
 		this.idFederacion = idFederacion;
 	}
 
-	public void concentrarse() {
-	}
-
-	public void viajar() {
-	}
-
 	public void dirigirPartido() {
+		System.out.println("clase Entrenador :  dirigirPartido () ");
 	}
 
 	public void dirigirEntrenamieto() {
+		System.out.println("clase Entrenador :  dirigirEntrenamiento () ");
 	}
 
 	public String getIdFederacion() {
@@ -35,4 +31,11 @@ public class Entrenador extends SeleccionFutbol {
 		this.idFederacion = idFederacion;
 	}
 
+	// implemente el medoto toString de la clase Object , osea le di un comportamiento
+	public String toString() {
+		return "Entrenador [idFederacion=" + idFederacion + ", id=" + id + ", nombre=" + nombre + ", apellido="
+				+ apellido + ", edad=" + edad + "]";
+	}
+
+	
 }

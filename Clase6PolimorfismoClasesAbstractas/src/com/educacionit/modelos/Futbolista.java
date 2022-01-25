@@ -16,16 +16,19 @@ public class Futbolista extends SeleccionFutbol {
 		this.demarcacion = demarcacion;
 	}
 
-	public void jugarPartido() {
-		System.out.println("clase Futbolista :  jugarPartido () ");
+	@Override
+	public void entrenamiento() {
+		System.out.println("Soy un metodo abtracto implementado en la clase hija Futbolista  ( clase Futbolista )  ");
 	}
 
-	public void entrenar() {
-		System.out.println("clase Futbolista :  entrenar () ");
+	@Override
+	public void partidoFutbol() {
+		System.out.println("jugar un Partido ( clase Futbolista ) ");
 	}
-	
-	public void concentrarse() {
-		System.out.println("clase Futbolista :  Concentrarse como lo hace un futbolista  () ");
+
+
+	public void entrevista() {
+		System.out.println("clase Futbolista :  dando una entrevista    ( clase Futbolista ) ");
 	}
 
 	public int getDorsal() {

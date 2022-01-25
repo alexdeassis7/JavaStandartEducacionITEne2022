@@ -16,8 +16,13 @@ public class Masajista extends SeleccionFutbol {
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
+	@Override
+	public void entrenamiento() {
+		System.out.println("da asistencia en un entrenamiento (Clase Masajista)");
+	}
+
 	public void darMasaje() {
-		System.out.println("Clase Masajista : darMasaje()");
+		System.out.println("Estoy danto un masaje .... (Clase Masajista)");
 	}
 
 	public String getTitulacion() {

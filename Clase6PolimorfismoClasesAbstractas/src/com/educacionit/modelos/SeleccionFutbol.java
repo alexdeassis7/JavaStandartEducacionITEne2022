@@ -1,8 +1,12 @@
 package com.educacionit.modelos;
 
-//clase Padre
+//clase Padre Abstracta 
+//Una clase abstracta es aquella que se utiliza pura y exclusivamente para mecanismos de herencia 
+//pero no me permite instanciar objetos de ella
 
-public class SeleccionFutbol {
+//new SeleccionFutbol(); //ERROOOORRR por ser abstracta
+
+public abstract class SeleccionFutbol {
 
 	protected int id;
 	protected String nombre;
@@ -26,6 +30,15 @@ public class SeleccionFutbol {
 	public void viajar() {
 		System.out.println("clase Padre :  viajar () ");
 	}
+
+	public void partidoFutbol() {
+		System.out.println("clase Padre :  partidoFutbol () ");
+	}
+
+	// IMPORTANTE -> METODO ABTRACTO : No se implementa dentro de la clase abstracta
+	// pero si en la primer
+	// clase hija concreta
+	public abstract void entrenamiento();
 
 	public int getId() {
 		return id;
